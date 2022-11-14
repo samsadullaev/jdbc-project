@@ -27,4 +27,25 @@ where EMPLOYEE_ID between  100 and 120;
 select * from EMPLOYEES
 where JOB_ID='IT_PROG' or JOB_ID='MK_MAN';
 
+--in clauses--
+--uses or logic by using IN
+
+select * from EMPLOYEES
+where JOB_ID IN('IT_PROG', 'MK_MAN');
+
+select * from EMPLOYEES
+where EMPLOYEE_ID IN(121,143,156,134);
+
+
+select * from COUNTRIES
+where COUNTRY_ID IN('US','IT');
+
+select * from COUNTRIES
+where COUNTRY_ID NOT IN('US', 'IT');
+
+select* from EMPLOYEES
+where DEPARTMENT_ID IS NULL ;
+
+select * from EMPLOYEES
+where MANAGER_ID is not null ;
 
