@@ -19,7 +19,7 @@ select * from EMPLOYEES
 where salary>6000 and DEPARTMENT_ID=60;
 
 select * from EMPLOYEES
-where salary >=3000 and SALARY<= 7000;
+where salary >=6000 and SALARY<= 7000;
 
 select * from EMPLOYEES
 where EMPLOYEE_ID between  100 and 120;

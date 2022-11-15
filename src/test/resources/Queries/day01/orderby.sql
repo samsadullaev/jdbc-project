@@ -13,7 +13,7 @@ order by 8 desc;
 
 
 select * from EMPLOYEES
-order by FIRST_NAME asc  LAST_NAME desc;
+order by FIRST_NAME ,  LAST_NAME desc;
 
 select * from EMPLOYEES
 where EMPLOYEE_ID < 120 order by SALARY desc ;
