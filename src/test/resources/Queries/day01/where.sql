@@ -9,10 +9,13 @@ select FIRST_NAME,LAST_NAME,SALARY from EMPLOYEES
 where FIRST_NAME='David' and LAST_NAME='Austin';
 
 select * from EMPLOYEES
-where salary>6000;
+where salary>6000
+order by SALARY;
 
 select EMAIL from EMPLOYEES
-where salary<6000;
+where salary<6000
+order by SALARY;
+
 
 
 select * from EMPLOYEES
