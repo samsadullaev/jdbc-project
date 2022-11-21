@@ -20,7 +20,7 @@ order by FIRST_NAME;
 
 --substr
 
-select substr(FIRST_NAME,-4,3)||'.'||substr(LAST_NAME,1,1)  from EMPLOYEES;
+select substr(FIRST_NAME,1,3)||'.'||substr(LAST_NAME,1,1)  from EMPLOYEES;
 
 select reverse(FIRST_NAME) from EMPLOYEES;
 

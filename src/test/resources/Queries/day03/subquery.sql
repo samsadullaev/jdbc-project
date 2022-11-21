@@ -32,8 +32,10 @@ where SALARY = (select max(SALARY) from EMPLOYEES
                                                   WHERE salary <(select max(salary) from EMPLOYEES)))));
 
 --more than avg
+select  salary from EMPLOYEES
+    order by salary ;
 
-select min(SALARY) from EMPLOYEES;--6461
+select min(SALARY) from EMPLOYEES;--2100
 
 
 --second min salary
@@ -43,6 +45,9 @@ where SALARY>(select avg(SALARY) from EMPLOYEES);
 select FIRST_NAME,LAST_NAME from EMPLOYEES
 where SALARY=(select min(SALARY) from EMPLOYEES
                 where Salary >(select min(SALARY) from EMPLOYEES));
+
+
+
 
 
 
